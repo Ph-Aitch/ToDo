@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-IT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+
+<body data-theme>
+    <dialog class="dialog" id="dialog"></dialog>
+    <div class="sidebar">
+        <h1>DO IT <span class="mdi mdi-clipboard-list-outline"></span></h1>
+        <div class="projects">
+            <h2>Projects</h2>
+            <button class="sidebar-button" id="add_project">
+                <span class="mdi mdi-plus-circle-outline"></span> Add Project
+            </button>
+            <div class="content" id="project_content"></div>
+        </div>
+        <div class="tasks">
+            <button class="sidebar-button" id="add_task">
+                <span class="mdi mdi-plus-circle-outline"></span> Add Task
+            </button>
+            <div class="tab active" id="all_tasks">All Tasks</div>
+            <div class="tab" id="today_tasks">Today's Tasks</div>
+            <div class="tab" id="this_week_tasks">Week's Tasks</div>
+            <div class="tab" id="important_tasks"><span class="mdi mdi-star" style="color: var(--active)"></span>Important Tasks</div>
+        </div>
+        <div class="theme-toggle" id="toggler"><span class="mdi mdi-weather-night"></span></div>
+    </div>
+    <main>
+        <div class="navbar" id="navbar"></div>
+        <div class="task-grid" id="task_content"></div>
+    </main>
+</body>
+
+</html>
